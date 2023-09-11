@@ -82,7 +82,7 @@ export default function Editpage({setPage, data, deleteDataField, setData, items
             </View>
             )}
             {/* <Button title='Add Company' onPress={addCompany} /> */}
-            <TouchableOpacity  onPress={()=>{setPage(1)}} style={{backgroundColor:'black', padding: 5, marginVertical: 10, justifyContent:'center', alignItems:'center', borderRadius: 5}}>
+            <TouchableOpacity  onPress={addCompany} style={{backgroundColor:'black', padding: 5, marginVertical: 10, justifyContent:'center', alignItems:'center', borderRadius: 5}}>
                 <Text style={{color:'white', fontSize: 18}}>Add Company {'+'}</Text>
             </TouchableOpacity>
             </View>
