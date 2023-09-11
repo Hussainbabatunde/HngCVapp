@@ -25,6 +25,8 @@ export default function App() {
     university: 'University of Lagos',
     department:'Electrical/ Electronics Engineering',
     location: 'Lagos, Nigeria',
+    languages: 'HTML, CSS, Javascript, Python',
+    frameworks: 'React, React native, Chakra UI, Redux toolkit, Tailwind CSS'
     // jobDesc: 'Software developer (Web and Mobile app development)',
     // company:'BCT Limited',
     // companyLocation: 'Lagos, Nigeria'
@@ -47,12 +49,6 @@ export default function App() {
       setItems(updatedItems);
       // clearInput(key);
     // }
-  };
-  const addItem = () => {
-    if (newItem.trim() !== '') {
-      setItems([...items, { text: newItem, editable: true }]);
-      setNewItem('');
-    }
   };
 
   const removeItem = (index) => {

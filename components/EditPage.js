@@ -31,6 +31,12 @@ export default function Editpage({setPage, data, deleteDataField, setData, items
             <TextInput value={data?.department} onChangeText={(text)=> setData({...data, department: text})} style={{borderWidth: 1, fontSize: 17, padding: 5}} />
             <Text style={{marginTop: 5}}>University Location:</Text>
             <TextInput value={data?.location} onChangeText={(text)=> setData({...data, location: text})} style={{borderWidth: 1, fontSize: 17, padding: 5}} />
+            
+            <Text style={{fontSize: 20, marginTop: 20}}>Skills</Text>
+            <Text style={{marginTop: 5}}>Language:</Text>
+            <TextInput value={data?.languages} onChangeText={(text)=> setData({...data, languages: text})} style={{borderWidth: 1, fontSize: 17, padding: 5}} />
+            <Text style={{marginTop: 5}}>Frameworks:</Text>
+            <TextInput value={data?.frameworks} multiline={true} numberOfLines={2} onChangeText={(text)=> setData({...data, frameworks: text})} style={{borderWidth: 1, fontSize: 17, padding: 5}} />
 
             <Text style={{fontSize: 20, marginTop: 20}}>Experience</Text>
             {items?.map((each, index) => 
@@ -75,7 +81,7 @@ export default function Editpage({setPage, data, deleteDataField, setData, items
                 <Text style={{color:'white', fontSize: 15}}>Add detail</Text>
             </TouchableOpacity>
                 {/* <Button title='Delete Company' onPress={()=> removeItem(index)} /> */}
-                <TouchableOpacity  onPress={()=> removeItem(index)} style={{backgroundColor:'red', padding: 5, marginVertical: 10, justifyContent:'center', alignItems:'center',  borderRadius: 5}}>
+                <TouchableOpacity  onPress={()=> removeItem(index)} style={{backgroundColor:'#FB6964', padding: 5, marginVertical: 10, justifyContent:'center', alignItems:'center',  borderRadius: 5}}>
                 <Text style={{color:'white', fontSize: 15}}>Delete Company</Text>
             </TouchableOpacity>
             </View>

@@ -62,6 +62,18 @@ export default function Home({setPage, items, data}){
             </View>
             
             )}
+
+                <Text style={{fontSize: 20, marginTop: 20}}>Skills</Text>
+                <View style={{height: 2, backgroundColor:'black'}}></View>
+                <View style={{flexDirection:'row', marginVertical: 5}}>
+                <Text style={{fontWeight: 600}}>Languages: </Text>
+                <Text style={{flex: 1}}>{data?.languages}</Text>
+                </View>
+                
+                <View style={{flexDirection:'row', marginVertical: 5}}>
+                <Text style={{fontWeight: 600}}>Frameworks: </Text>
+                <Text style={{flex: 1}}>{data?.frameworks}</Text>
+                </View>
                 
 
                 {/* <FlatList
