@@ -100,8 +100,8 @@ export default function Home({setPage, items, data}){
       />
       <Button title="Add" onPress={addItem} /> */}
                 </View>
-            <TouchableOpacity style={{marginTop: 10, justifyContent:'center', alignItems:'center'}}  onPress={() => {setPage(2)}}>
-                <Text style={{fontSize: 18}}>Edit CV</Text>
+            <TouchableOpacity style={{marginTop: 10, justifyContent:'center', alignItems:'center', marginBottom: 100, backgroundColor:'black', padding: 5, borderRadius: 5}}  onPress={() => {setPage(2)}}>
+                <Text style={{fontSize: 18, color:'white'}}>Edit CV</Text>
             </TouchableOpacity>
 
         </ScrollView>

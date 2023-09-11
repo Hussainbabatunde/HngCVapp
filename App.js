@@ -29,6 +29,25 @@ export default function App() {
     // company:'BCT Limited',
     // companyLocation: 'Lagos, Nigeria'
   })
+
+  const addCompany = () => {
+    // if (newItem.trim() !== '') {
+      const updatedItems = [...items, {
+        company: '',
+        location: '',
+        jobDesc: '',
+        data: [''],
+    }];
+    //   updatedItems = [...updatedItems, {
+    //     company: '',
+    //     location: '',
+    //     jobDesc: '',
+    //     data: [''],
+    // }];
+      setItems(updatedItems);
+      // clearInput(key);
+    // }
+  };
   const addItem = () => {
     if (newItem.trim() !== '') {
       setItems([...items, { text: newItem, editable: true }]);
@@ -42,20 +61,20 @@ export default function App() {
     setItems(updatedItems);
   };
 
-  const editItem = (index, text) => {
+  const addDataField = (index) => {
     const updatedItems = [...items];
-    updatedItems[index].text = text;
+    updatedItems[index].data.push('');
     setItems(updatedItems);
   };
 
-  const toggleEditable = (index) => {
+  const deleteDataField = (index, i) => {
     const updatedItems = [...items];
-    updatedItems[index].editable = !updatedItems[index].editable;
+    updatedItems[index].data.splice(i, 1);
     setItems(updatedItems);
   };
   return (<>
     {page == 1 ?
-      <Home setPage={setPage} items={items} data={data}  /> : <Editpage setPage={setPage} data={data} setData={setData} />
+      <Home setPage={setPage} items={items} data={data}  /> : <Editpage setPage={setPage} data={data} setData={setData} items={items} setItems={setItems} addCompany={addCompany} addDataField={addDataField} deleteDataField={deleteDataField} removeItem={removeItem} />
     }
     </>
   );
