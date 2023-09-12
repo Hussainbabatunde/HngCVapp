@@ -33,6 +33,7 @@ export default function Home({setPage, items, data}){
             <StatusBar style="auto" />
             <View style={{backgroundColor: "white", borderRadius: 15, padding: 10, marginTop: 20}}>
                 <Text style={{textAlign:'center', fontSize: 25, color:'#438fef'}}>{data?.name}</Text>
+                <Text style={{textAlign:'center'}}>{data?.email}</Text>
                 <Text style={{textAlign:'center'}}>Slack Username: {data?.slackUsername}</Text>
                 <Text style={{textAlign:'center'}}>Github handle: {data?.github}</Text>
                 <View style={{height: 2, backgroundColor:'black', marginTop: 10}}></View>

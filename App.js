@@ -19,6 +19,7 @@ export default function App() {
   const [newItem, setNewItem] = useState('');
   const [data, setData] = useState({
     name: 'Hussain Babatunde Adekunle',
+    email: 'tudemine@gmail.com',
     slackUsername: 'Hussain Babatunde',
     github:'Hussainbabatunde',
     bio:'A highly motivated graduate, I am committed to delivering top-quality service through hard work, innovative thinking, strong interpersonal skills, organization, and a positive attitude.',

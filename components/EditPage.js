@@ -18,6 +18,8 @@ export default function Editpage({setPage, data, deleteDataField, setData, items
             <TextInput value={data?.name} onChangeText={(text)=> setData({...data, name: text})} style={{borderWidth: 1, fontSize: 17, padding: 5}} />
             <Text style={{marginTop: 5}}>Bio:</Text>
             <TextInput value={data?.bio} onChangeText={(text)=> setData({...data, bio: text})} multiline={true} numberOfLines={5} style={{borderWidth: 1, fontSize: 17, padding: 5, minHeight: 100,}} />
+            <Text style={{marginTop: 5}}>Email:</Text>
+            <TextInput value={data?.email} onChangeText={(text)=> setData({...data, email: text})} style={{borderWidth: 1, fontSize: 17, padding: 5}} />
 
             <Text style={{marginTop: 5}}> Slack Username:</Text>
             <TextInput value={data?.slackUsername} onChangeText={(text)=> setData({...data, slackUsername: text})}  style={{borderWidth: 1, fontSize: 17, padding: 5}} />
